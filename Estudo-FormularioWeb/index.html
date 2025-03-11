@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="content">
+        <form action="#" method="dialog" class="formulario">
+            <!-- nome do usuário -->
+            <label for="name">
+                <h2>Nome do usuário</h2>
+                <input type="text" id="name"  placeholder="Digite seu nome aqui" required>
+            </label>
+            <!-- Email do usuário -->
+            <label for="name">
+                <h2>Email do usuário</h2>
+                <input type="email" id="email"placeholder="Digite seu email aqui" required>
+            </label>
+            <!-- senha do usuário -->
+            <label for="name">
+                <h2>Senha do usuário</h2>
+                <input type="password" id="password" placeholder="Digite sua senha aqui" required>
+            </label>
+            <!-- idade do usuário -->
+            <label for="name">
+                <h2>Idade do usuário</h2>
+                <input type="number" id="number" placeholder="Digite sua idade aqui" required>
+            </label>
+
+            <!-- Telefone do usuário -->
+            <label for="phoneNumber">
+                <h2>Telefone do usuário</h2>
+                <input type="text" id="phoneNumber"  placeholder="(XX) XXXXXX-XXXXX" required>
+            </label>
+            <!-- Site pessoal do usuário -->
+            <label for="name">
+                <h2>Site pessoal <br> do usuário</h2>
+                <input type="url" id="name"  placeholder="Digite o link do seu site pessoal aqui" required>
+            </label>
+            <!-- Data de nascimento do usuário -->
+            <label for="dateOfBirth">
+                <h2>Data de <br> nascimento <br> do usuário</h2>
+                <input type="number" id="dateOfBirth" placeholder="Digite aqui" required>
+            </label>
+            
+            <div class="others">
+             <!-- Gênero do usuário -->
+             <label for="gender" class="radio">
+                <h2>Gênero do usuário</h2>
+              <input type="radio" id="masculino" name="genero" value="masculino" required> Masculino
+              <input type="radio" id="feminino" name="genero" value="feminino" required> feminino
+              <input type="radio" id="outro" name="genero" value="outro" required> outro
+            </label>
+
+             <!-- Interesses do usuário -->
+             <label for="gender" class="checkbox">
+                <h2>Interesses do usuário</h2>
+              <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia" required> tecnologia
+              <input type="checkbox" id="esportes" name="interesses" value="esportes" required> esportes
+              <input type="checkbox" id="musica" name="interesses" value="musica" required> musica
+            </label>
+            
+              <!-- País do usuário do usuário -->
+              <label for="dateOfBirth">
+                <h2>País do usuário</h2>
+                <select name="pais" id="pais" required>
+                    <option value="brasil">Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="estados unidos">Estados Unidos</option>
+                    <option value="outro">outro</option>
+                </select>
+            </label>
+
+            <!-- Mensagem do usuário -->
+             <label for="mensagem">
+                <h2>Mensagem:</h2>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+            </label>
+        </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
