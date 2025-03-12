@@ -1,0 +1,29 @@
+#t1{
+    color: red;
+}
+
+#t2{
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+    color: #234bfc;
+
+
+}
+
+
+.texto{
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline;
+        text-align: center;
+        letter-spacing: 5px;
+
+}
+
+.palavra{
+    color: rgb(0, 121, 228);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    margin-top: 10%;
+}
