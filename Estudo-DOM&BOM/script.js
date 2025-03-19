@@ -9,7 +9,7 @@ function mudarCorFundo(){
 }
 
 function abrirNovaPagina(){
-    windows.open("https://www.google.com", "_blank")
+    window.open("https://www.google.com", "_blank")
 }
 
 function mostrarInfoNavegador(){
