@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    .h400 {
+      height: 400px;
+    }
+
+    .box {
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .img-fluid {
+      max-height: 200px; /* tamanho máximo que a imagem ficará. */
+      object-fit: cover; /* se for maior a imagem é cortada para preencher todo o espaço */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- Coluna 1 -->
+    <div class="col-md-4">
+      <div class="bg-primary box h-100">
+        <h3>Produto 1</h3>
+        <img src="layoutgrid.png" class="img-fluid mb-2" alt="Imagem 1">
+        <p>Descrição breve do produto. Ideal para quem busca qualidade e praticidade.</p>
+      </div>
+    </div>
+
+    <!-- Coluna 2 -->
+    <div class="col-md-4">
+      <div class="bg-success box h-100">
+        <h3>Produto 2</h3>
+        <img src="layoutgrid2.jpg" class="img-fluid mb-2" alt="Imagem 2">
+        <p>Este produto possui funcionalidades incríveis para o seu dia a dia.</p>
+      </div>
+    </div>
+
+    <!-- Coluna 3 -->
+    <div class="col-md-4">
+      <div class="bg-danger box h-100">
+        <h3>Produto 3</h3>
+        <img src="layoutgrid3.webp" class="img-fluid mb-2" alt="Imagem 3">
+        <p>Ótima opção para quem busca custo-benefício. Aproveite!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
