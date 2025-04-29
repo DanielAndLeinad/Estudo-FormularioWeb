@@ -1,0 +1,76 @@
+<!-- Declara que este é um documento HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Faz o site se adaptar a telas menores como celular -->
+  <title>Layout com Bootstrap</title> <!-- Título da aba do navegador -->
+
+  <!-- Importa o CSS do Bootstrap via CDN (Bootstrap v5.3.2) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bloco de estilos CSS personalizados -->
+  <style>
+    /* Classe base para todos os blocos/quadrados */
+    .box {
+      display: flex; /* Usa Flexbox para centralizar conteúdo */
+      align-items: center; /* Alinha verticalmente ao centro */
+      justify-content: center; /* Alinha horizontalmente ao centro */
+      height: 150px; /* Altura padrão dos blocos */
+      color: white; /* Cor do texto */
+      font-size: 2rem; /* Tamanho do número central */
+      font-weight: bold; /* Texto em negrito */
+      border: 2px solid #000; /* Borda preta nos blocos */
+    }
+
+    /* Cores individuais para cada bloco */
+    .box1 { background-color: #007bff; height: 100%; } /* Azul */
+    .box2 { background-color: #28a745; } /* Verde */
+    .box3 { background-color: #ffc107; } /* Amarelo */
+    .box4 { background-color: #dc3545; } /* Vermelho */
+    .box5 { background-color: #17a2b8; height: 300px;} /* Ciano e altura maior */
+    .box6 { background-color: #6f42c1; } /* Roxo */
+
+    /* Classe que define altura estendida para o bloco 1 */
+    .full-height {
+      height: 450px; /* Altura equivalente a 3 blocos normais (3 x 150px) */
+    }
+
+    /* Regras para telas pequenas (responsivo) */
+    @media (max-width: 768px) {
+      .full-height {
+        height: auto; /* Altura automática (flexível) para celulares */
+      }
+    }
+  </style>
+</head>
+
+<!-- Corpo da página -->
+<body class="container mt-4"> <!-- container = margem lateral automática; mt-4 = margem superior -->
+
+  <!-- Linha principal do layout -->
+  <div class="row">
+    
+    <!-- Coluna da esquerda: bloco 1 ocupa metade da tela (6/12 colunas) -->
+    <div class="col-md-6">
+      <div class="box box1 full-height">1.</div> <!-- Bloco azul, alto e com número 1 centralizado -->
+    </div>
+
+    <!-- Coluna do meio: blocos 2, 3 e 4 empilhados verticalmente -->
+    <div class="col-md-3">
+      <div class="box box2">2.</div> <!-- Bloco verde -->
+      <div class="box box3">3.</div> <!-- Bloco amarelo -->
+      <div class="box box4">4.</div> <!-- Bloco vermelho -->
+    </div>
+
+    <!-- Coluna da direita: blocos 5 e 6, um maior e outro normal -->
+    <div class="col-md-3">
+      <div class="box box5">5.</div> <!-- Bloco ciano, mais alto (300px) -->
+      <div class="box box6">6.</div> <!-- Bloco roxo -->
+    </div>
+
+  </div> <!-- Fecha a linha -->
+
+</body>
+</html>
